@@ -6,7 +6,7 @@ def test_encrypt_message():
     with pytest.raises(TypeError):
         encrypt_message("a", "b")
         encrypt_message(1, 2)
-    
+
     assert encrypt_message("segredo", 3) == "ges_oder"
     assert encrypt_message("segredo", 9) == "oderges"
     assert encrypt_message("segredo", 4) == "ode_rges"
